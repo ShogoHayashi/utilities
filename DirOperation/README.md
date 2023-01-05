@@ -13,3 +13,8 @@ python dir_operation.py
 - 中間ディレクトリを含めてディレクトリを作成
 - 中身が空のディレクトリを削除
 - 中身が空でないディレクトリの削除
+
+## ファイル操作
+```
+python file_operation.py
+```
