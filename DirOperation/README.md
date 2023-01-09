@@ -4,7 +4,7 @@
 ```
 python dir_operation.py
 ```
-以下が参考文献
+### 参考文献
 - [pathlib : オブジェクト指向のファイルシステムパス](https://docs.python.org/ja/3/library/pathlib.html)
 - [shutil : 高水準のファイル操作](https://docs.python.org/ja/3/library/shutil.html)
 
@@ -21,7 +21,7 @@ python dir_operation.py
 ```
 python file_operation.py
 ```
-以下が参考文献
+### 参考文献
 - [pathlib : オブジェクト指向のファイルシステムパス](https://docs.python.org/ja/3/library/pathlib.html)
 - [pprint : データ出力の整然化](https://docs.python.org/ja/3/library/pprint.html)
 
