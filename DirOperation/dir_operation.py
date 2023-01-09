@@ -8,6 +8,7 @@ import pathlib
 import shutil
 
 
+
 # カレントディレクトリ上にディレクトリを作成
 def make_directory_in_current(folder_path):
     # Pathオブジェクトを作成
@@ -32,7 +33,7 @@ def make_directory_in_current(folder_path):
 
 
 # 中間ディレクトリを含めてディレクトリを作成
-def intermediate_directory():
+def intermediate_directory(folder_path):
     # Pathオブジェクトを作成
     p_folder = pathlib.Path(folder_path)
     
@@ -61,7 +62,7 @@ def delete_empty_directory(folder_path):
     p_folder = pathlib.Path(folder_path)
     
     # ディレクトリが存在するものであるかを確認
-    if p_folder.exists():
+    if not p_folder.exists():
         print(f"{folder_path} is not exists.")
         # If exists, return to main function
         return
@@ -73,7 +74,7 @@ def delete_empty_directory(folder_path):
     p_folder.rmdir()
     
     # 空のディレクトリの削除が成功したかどうか
-    if p_folder.exists():
+    if not p_folder.exists():
         print(f"Successfully deleted {folder_path}.")
     else:
         print(f"Failed to delete {folder_path}.")
@@ -85,7 +86,7 @@ def delete_not_empty_directory(folder_path):
     p_folder = pathlib.Path(folder_path)
     
     # ディレクトリが存在するものである確認
-    if p_folder.exists():
+    if not p_folder.exists():
         print(f"{folder_path} is not exists.")
         # If exists, return to main function
         return
@@ -98,8 +99,11 @@ def delete_not_empty_directory(folder_path):
     shutil.rmtree(p_folder)
     
     # ディレクトリの削除が成功したかどうか
-    if p_folder.exists():
+    if not p_folder.exists():
         print(f"Successfully deleted {folder_path}.")
     else:
         print(f"Failed to delete {folder_path}.")
 
+folder_path = "new_folder"
+
+delete_not_empty_directory(folder_path)
