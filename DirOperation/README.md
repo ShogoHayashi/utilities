@@ -22,10 +22,14 @@ python dir_operation.py
 python file_operation.py
 ```
 以下が参考文献
-- []()
+- [pathlib : オブジェクト指向のファイルシステムパス](https://docs.python.org/ja/3/library/pathlib.html)
+- [pprint : データ出力の整然化](https://docs.python.org/ja/3/library/pprint.html)
 
 主にpathlibを使用している。操作内容は以下の通り。
 - ディレクトリ内のファイルと子ディレクトリの一覧を取得する
+- ディレクトリ内のファイルと子ディレクトリの一覧を再帰的に取得する
+- ファイルの情報を確認
+- フォルダのパス操作色々
 
 実行時注意点として
 - ディレクトリ内の一覧を取得する際はそのディレクトリ名もしくはパスを引数として与える
