@@ -52,7 +52,3 @@ def get_voxel_spacing_2(mhd_file):
     # 解像度を取得する
     raw_spacing = itkimage.GetSpacing()
 
-
-mhd_file = "ChestCT.mhd"
-# get_raw_image_sitk_2(mhd_file)
-get_raw_image_skimage(mhd_file)
