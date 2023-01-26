@@ -8,7 +8,7 @@ python dir_operation.py
     - [pathlib : オブジェクト指向のファイルシステムパス](https://docs.python.org/ja/3/library/pathlib.html)
     - [shutil : 高水準のファイル操作](https://docs.python.org/ja/3/library/shutil.html)
 
-- 操作内容は以下の通り。
+- 操作内容
     - カレントディレクトリ上に任意のディレクトリを作成
     - 中間ディレクトリを含めてディレクトリを作成
     - 中身が空のディレクトリを削除
